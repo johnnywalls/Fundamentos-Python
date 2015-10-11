@@ -4,8 +4,19 @@
 Ejemplos de uso de ciclos *for* en Python
 """
 # El caso más sencillo, iterar sobre un rango definido de valores
+print('Ciclo for con range(5)')
 for n in range(5):
     print(n)
+
+# También podemos interrumpir o 'saltar' iteraciones de un ciclo
+print('Ciclo for con range(21), mostrando sólo pares no mayores a 10')
+for n in range(21):
+    if n % 2 == 0:
+        if n > 10:
+            break
+        print(n)
+    else:
+        continue
 
 desayunos = ['Cereal','Tortilla']
 print('='*10,'Menú para desayunos','='*10)
